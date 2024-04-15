@@ -1,0 +1,12 @@
+p {
+    background-color: #dddddd;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*color: red; (example to change the text red */
+}
+
+a:hover{
+    color: lime
+}
