@@ -1,0 +1,6 @@
+//Truncate the paragraph to show when the user presses more
+$(".more").toggle(function(){
+    $(this).text("less..").siblings(".complete").show();    
+}, function(){
+    $(this).text("more..").siblings(".complete").hide();    
+});

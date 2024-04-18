@@ -8,13 +8,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>3 Col Portfolio - Start Bootstrap Template</title>
+    <title>A.Dokun Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- Reduce the number of lines showing for the parapgraph on spatial patterns -->
+    <link href="css/complete-paragraph.css" rel="stylesheet">
 
   </head>
 
@@ -23,25 +26,28 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">Adeola Dokun: GeoViz Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="FlowMapper.html">FlowMapper</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="ShortBio.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="Files/ADokun_Resume2024.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:aodokun@wayptgis.com">Contact</a>
             </li>
           </ul>
         </div>
@@ -52,41 +58,73 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Page Heading
-        <small>Secondary Text</small>
+      <h1 class="my-4">Geovisualization Portfolio
+        <small>GEOG 5540</small>
       </h1>
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://observablehq.com/d/be8f0d09c4e3826b"><img class="card-img-top" src="images/choropleth.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a href="https://observablehq.com/d/be8f0d09c4e3826b">Shelby County, TN, Census Tracts: Education Attainment of BA Population 25+ (2022)</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <p class="cardtext">The map is a Choropleth map of Shelby County, TN, Census Tracts. The spatial pattern shows that the Census Tracts
+                with the highest population percentage 25 plus with a Bachelors (dark purple) are located in the central and western areas of the county.
+                This aligns with the makeup of the county where we find the higher incomes and homes are located. The rest of the county shows more variablity, 
+                with a mix of low to high. The city which is located at the western part of the county ranges from low to medium with a Bachelors
+                (showing in the lightest purple to med purple).
+              </p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://observablehq.com/d/0c3ab7bcd13a7519"><img class="card-img-top" src="images/graduatedSymbols.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a href="https://observablehq.com/d/0c3ab7bcd13a7519">Shelby County, TN, Census Tracts: Median Household Income (2022)</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <p class="cardtext">This is a Graduated Symbol map of Shelby County, TN. It is showing the median household income by Census Tracts.
+                The county encompasses the city of Memphis to the west and suburbs to the east. The spatial pattern of the Median Household Income 
+                concludes as expected, the higher median incomes is in the suburbs that is is located in the east side of the county, while the lower 
+                median incomes appear in the city, that is in the west of the county. The middle median incomes are located between the lower and higher
+                 median incomes.</p>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <a href="https://observablehq.com/d/0527cbecbaf88556"><img class="card-img-top" src="images/Bivariate Choropleth.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a href="https://observablehq.com/d/0527cbecbaf88556">Shelby County, TN, Census Tracts: Bivariate Choropleth Map</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+              <p class="text">The legend displays nine colors. Each color provides an understanding of the spatial
+                makeup of the two attributes. The white/grayish color at the bottom of the legend is where both attributes
+                 are at their lowest, a low percentage of the population 25+ with a bachelor's and the lowest household median
+                  incomes. On the map this color appears in the western central part of the county, which is the city, they 
+                  are spatially contiguous. The outliers in the legend are the colors at the middle far left and right 
+                  (med blue and red) this indicates</p>
+              <p class="complete">The legend displays nine colors. Each color provides an understanding of the spatial
+                 makeup of the two attributes. The white/grayish color at the bottom of the legend is where both attributes
+                  are at their lowest, a low percentage of the population 25+ with a bachelor's and the lowest household median
+                   incomes. On the map this color appears in the western central part of the county, which is the city, they 
+                   are spatially contiguous. The outliers in the legend are the colors at the middle far left and right 
+                   (med blue and red) this indicates that the Household Median Income (high)/percent 25+ with a BA (low) and 
+                   the reverse percent 25+ population (high)/Household Median Income (low), respectively. There is only one 
+                   tract that appears to be an outlier (med red); this can be found in the center of the county, where the 
+                   percentage is 25+ with a BA (high)/Median Income (low). The dark maroon color at the top of the legend is 
+                   where both attributes are at their highest. We see this in the suburbs (far east) and close to the center 
+                   bottom of the map. This is where the county has its more affluent households. This group has a high percentage 
+                   of the population 25+ with a bachelor's degree and the highest Household Median Income. The center color of the 
+                   legend is a mix of both attributes that fall in the medium of the data values. This is scattered throughout the 
+                   county. Lastly, the remaining 4 colors in the legend is a mix of both attribute combinations (low, med, high). 
+                   Those colors with a saturation closer to blue indicate Household Median Income is high and % population 25+ with 
+                   a BA is low or medium and those that are more saturated with red indicate that the % population 25+ with BA is high 
+                   and the Household Median Income is low or medium.</p>
+              <p class="more">Read more...</p>
             </div>
           </div>
         </div>
@@ -165,6 +203,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.Truncate.paragraph.js"></script>
 
   </body>
 

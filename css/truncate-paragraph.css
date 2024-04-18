@@ -1,0 +1,7 @@
+
+  .card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
