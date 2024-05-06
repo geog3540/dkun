@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>A. Dokun Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Adeola Dokun, GISP: Geovisualization Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FlowMapper.html">Flow Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ShortBio.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Files/ADokun_Resume2024.pdf">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:aodokun@wayptgis.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Flow Map
+        <small>South American Banana Trade Flow Project</small>
+      </h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <a href="Files/Assignment6_SouthAmericaBananaFlowMapper.pdf"><iframe width="1000" height="462" src="https://uiowa.maps.arcgis.com/apps/dashboards/be95fe0a6f5746de8f7a3b09f7c8bae9" alt="Dashboard"></iframe>
+          <h6>
+            <a href="Files/Assignment6_SouthAmericaBananaFlowMapper.pdf">South America Banana Trade Flow (doc)</a>
+          </h6>
+          <p>Use <a href="https://flowmapper.org/">FlowMapper </a>to view <a href="Files/SoAmericaBananas.json" download="">GeoJson map</a></p>
+        </div>
+        <div>
+        <p class="card-text">
+        <h4>Justification of flow map:</h4>
+        <br>
+          <h6>Symbology (point symbols, flow symbols, and the background choropleth 
+          map):</h6>
+          <p>The purpose of the map symbology, flow, and colors is to make the map 
+          readable to map viewers and easy to understand. I added a manual break setting to each 
+          symbol based on the data to minimize outliers in the data. I chose a dark gray canvas to 
+          allow the vibrant colors of the choropleth map to stand out.</p>
+          <h6>Flow Symbol:</h6>
+          <p>I am using Curved with half-arrow. This is the best symbol for providing
+          direction of the flow and is easily readable. Both the color and thickness are proportional to 
+          the level of flow so that if it is not clear in the thickness the color will allude to the amount 
+          of flow based on the legend, the lighter the color, the lighter the flow, and the darker the 
+          color the heavier the flow. The black stroke color allows the arrow/flow lines to pop-out 
+          from the background and provide clarity. The FlowMapper application allows me to adjust 
+          the thickness of the line based on a min/max setting, making this an unclassed map. The 
+          ability to adjust the line thickness will make it easier to adjust accordingly where there may 
+          be overlapping flows. The map shows the top 18 flows. The color of the flows does not make 
+          it difficult to see each distinctive flow.</p>
+          <h6>Node Symbol:</h6> 
+          <p>Is placed at the centroid of the regions being analyzed. I chose the node 
+          symbol color to be black to stand out and show as a strong indicator for the center of each 
+          country. It stands beautifully against the choropleth colors. If there are competing lines, the 
+          centroid stands out and can direct the viewer to the start or end point of a flow location. 
+          The nodes also have varying sizes based on the min/max of the data. This setting can be 
+          adjusted using the Flower Mapper application based on a min/max setting. The varying sizes 
+          are proportional to the Total Flow of the country.
+          </p>
+          <h6>Choropleth map:</h6> 
+          <p>The choropleth map colors that I chose pink/yellow/green. These colors 
+          represent a diverging color scheme. The dark and light pink colors represent a negative net 
+          flow, where there are higher exports and lower imports of bananas for a country in tons. The 
+          light and dark green colors represent higher imports and lower exports of bananas for a 
+          country in tons. The dividing line is 0 with a neutral color. The stroke line is black and the 
+          width is .5 so that it is easy to see each country’s boundary.</p>
+          <br>
+          <h4>Interpretation of flow patterns</h4>
+          <br>
+          <p>The places that have the most flows – Argentina, Chile and Uruguay. The map shows
+          these 3 countries have the largest nodes with green colors, indicating the highest 
+          amount of imports and the flow symbol to these countries has red and orange flow
+          patterns indicating heavy flows.</p>
+          <p>The places that send the most flows – Ecuador, Bolivia, and Brazil. These 3 countries 
+          have the largest nodes with pink colors, indicating the countries with the largest 
+          exports. Also, the red and orange flows are coming from these countries.</p>
+          <p> The general direction of flows (e.g., north-south, east-west, etc.) with context to the geography 
+          of the flow data set is North to South. Based on the readings, the northern part of the continent is more 
+          conducive to growing bananas, unlike the southern part.</p>
+          <p>The flow pattern is based on the relation to location characteristics displayed by node symbol and choropleth 
+          base map. Based on the choropleth map colors and direction of flow, the countries in the north 
+          are pink and show the largest flow amount. They have a negative net flow which 
+          indicates that they export more to the lower southern regions who import more and 
+          have a green country color</p>
+
+        </li>
+        </p>
+      </div>
+      </div>
+      <!-- /.row -->
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Adeola Dokun 2024</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
