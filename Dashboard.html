@@ -64,24 +64,54 @@
 
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
-          <a href="Files/Assignment6_SouthAmericaBananaFlowMapper.pdf"><iframe width="1300" height="650" src="https://uiowa.maps.arcgis.com/apps/dashboards/be95fe0a6f5746de8f7a3b09f7c8bae9" alt="Dashboard"></iframe>
-          <h6>
-            <a href="Files/Assignment6_SouthAmericaBananaFlowMapper.pdf">South America Banana Trade Flow (doc)</a>
-          </h6>
-          <p>Use <a href="https://flowmapper.org/">FlowMapper </a>to view <a href="Files/SoAmericaBananas.json" download="">GeoJson map</a></p>
+          <iframe width="1275" height="650" src="https://uiowa.maps.arcgis.com/apps/dashboards/be95fe0a6f5746de8f7a3b09f7c8bae9" alt="Dashboard"></iframe>
+          <h4>
+            <a href="HealthIns/Files/FinalProj.pdf">Final Project (doc)</a>
+          </h4>
         </div>
-        <div>
-        <p class="card-text">
-        <h4>Justification of flow map:</h4>
-        <br>
-          <h6>Symbology (point symbols, flow symbols, and the background choropleth 
-          map):</h6>
-          <p>The purpose of the map symbology, flow, and colors is to make the map 
-          readable to map viewers and easy to understand. I added a manual break setting to each 
-          symbol based on the data to minimize outliers in the data. I chose a dark gray canvas to 
-          allow the vibrant colors of the choropleth map to stand out.</p>
-          <h6>Flow Symbol:</h6>
-          <p>I am using Curved with half-arrow. This is the best symbol for providing
+        <!--<div>
+          <p class="card-text">
+            <h4>US Healthcare and the party line</h4>
+            <br>
+            <h6>Background</h6>
+            <p>On December 4, 2009, the Senate Democrats passed with a simple majority, HR 3590, 
+            the Patient Protection and Affordable Care Act (ACA), 61-39. Republicans opposed the bill. 
+            On March 21, 2010, the 111th Congress House of Representatives passed the bill (219 -212). 
+            The bill had 34 Democrats who opposed the bill.  Fast forward, on May 4, 2017, the 115th Congress 
+            voted to repeal and replace the ACA. The Republican party created their healthcare insurance bill, 
+            HR 1628, The American Health Care Act (AHCA). The bill passed in the House along party lines 
+            (217-213) but with 20 Republicans joining the Democrats and 1 not voting. The Senate bill vote was 
+            to partially repeal the ACA. It failed in the Senate (51-49) so the ACA was saved.
+            </p>
+            <p>Health Insurance is universal in many countries, but not in the United States. It has been a 
+              critical talking point for many years. The purpose of the ACA was to provide affordable health 
+              insurance to those whose income fell between a certain % of the federal poverty line and expand 
+              the Medicaid program based on income that fell at a certain % of the federal poverty line. States 
+              have the option to opt-in, but not all have expanded their Medicaid program. Is Health Insurance 
+              a right or a privilege? Should the government provide health insurance for all its citizens? We 
+              have heard countries around the world who provide such a benefit to their citizens. Democrats view
+               health insurance as a right for all Americans, while Republicans (those who want to repeal ACA) 
+               see it as an overreach, not something that the government should do, as well as make deep cuts to
+                Medicaid. The deep cuts to Medicaid is another talking point that has come time and time again 
+                much longer than the ACA issue.
+            </p>
+            <p><i>
+              There is broad consensus that an estimated 20 million to 22 million 
+              individuals have obtained healthcare insurance since 2010 primarily through the expansion of 
+              Medicaid, coverage through parents’ policies for young adults until age 26 years, and the 
+              healthcare exchanges. But that leaves more than 25 million US residents without health insurance. 
+              Is the United States a just and fair society if so many individuals lack health care coverage? 
+              The United States guarantees all citizens an education, access to fire and police services, a 
+              national postal service, protection by the military, a national park system, and many other 
+              federal- and state-funded services. But the country has not yet committed to ensuring that all of 
+              its citizens have health care coverage.</i></p>
+              
+              <p><i>(Howard Bauchner, MD, Health Care in the United States: A Right or a Privilege, JAMA. 2017;317(1):29. doi:10.1001/jama.2016.1968)
+              </i>
+              </p>
+
+            <h6>Goal</h6>
+            <p>I am using Curved with half-arrow. This is the best symbol for providing
           direction of the flow and is easily readable. Both the color and thickness are proportional to 
           the level of flow so that if it is not clear in the thickness the color will allude to the amount 
           of flow based on the legend, the lighter the color, the lighter the flow, and the darker the 
@@ -90,45 +120,47 @@
           the thickness of the line based on a min/max setting, making this an unclassed map. The 
           ability to adjust the line thickness will make it easier to adjust accordingly where there may 
           be overlapping flows. The map shows the top 18 flows. The color of the flows does not make 
-          it difficult to see each distinctive flow.</p>
-          <h6>Node Symbol:</h6> 
-          <p>Is placed at the centroid of the regions being analyzed. I chose the node 
+          it difficult to see each distinctive flow.
+            </p>
+            <h6>Node Symbol:</h6> 
+            <p>Is placed at the centroid of the regions being analyzed. I chose the node 
           symbol color to be black to stand out and show as a strong indicator for the center of each 
           country. It stands beautifully against the choropleth colors. If there are competing lines, the 
           centroid stands out and can direct the viewer to the start or end point of a flow location. 
           The nodes also have varying sizes based on the min/max of the data. This setting can be 
           adjusted using the Flower Mapper application based on a min/max setting. The varying sizes 
           are proportional to the Total Flow of the country.
-          </p>
-          <h6>Choropleth map:</h6> 
-          <p>The choropleth map colors that I chose pink/yellow/green. These colors 
+            </p>
+            <h6>Choropleth map:</h6> 
+            <p>The choropleth map colors that I chose pink/yellow/green. These colors 
           represent a diverging color scheme. The dark and light pink colors represent a negative net 
           flow, where there are higher exports and lower imports of bananas for a country in tons. The 
           light and dark green colors represent higher imports and lower exports of bananas for a 
           country in tons. The dividing line is 0 with a neutral color. The stroke line is black and the 
-          width is .5 so that it is easy to see each country’s boundary.</p>
-          <br>
-          <h4>Interpretation of flow patterns</h4>
-          <br>
-          <p>The places that have the most flows – Argentina, Chile and Uruguay. The map shows
+          width is .5 so that it is easy to see each country’s boundary.
+            </p>
+            <br>
+            <h4>Interpretation of flow patterns</h4>
+            <br>
+            <p>The places that have the most flows – Argentina, Chile and Uruguay. The map shows
           these 3 countries have the largest nodes with green colors, indicating the highest 
           amount of imports and the flow symbol to these countries has red and orange flow
-          patterns indicating heavy flows.</p>
-          <p>The places that send the most flows – Ecuador, Bolivia, and Brazil. These 3 countries 
+          patterns indicating heavy flows.
+            </p>
+            <p>The places that send the most flows – Ecuador, Bolivia, and Brazil. These 3 countries 
           have the largest nodes with pink colors, indicating the countries with the largest 
-          exports. Also, the red and orange flows are coming from these countries.</p>
-          <p> The general direction of flows (e.g., north-south, east-west, etc.) with context to the geography 
+          exports. Also, the red and orange flows are coming from these countries.
+            </p>
+            <p> The general direction of flows (e.g., north-south, east-west, etc.) with context to the geography 
           of the flow data set is North to South. Based on the readings, the northern part of the continent is more 
-          conducive to growing bananas, unlike the southern part.</p>
-          <p>The flow pattern is based on the relation to location characteristics displayed by node symbol and choropleth 
+          conducive to growing bananas, unlike the southern part.
+            </p>
+            <p>The flow pattern is based on the relation to location characteristics displayed by node symbol and choropleth 
           base map. Based on the choropleth map colors and direction of flow, the countries in the north 
           are pink and show the largest flow amount. They have a negative net flow which 
           indicates that they export more to the lower southern regions who import more and 
-          have a green country color</p>
-
-        </li>
-        </p>
-      </div>
+          have a green country color
+            </p>-->
       </div>
       <!-- /.row -->
 
